@@ -1,5 +1,6 @@
-import { Menu, X, Cake } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -21,10 +22,14 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <Cake className="w-8 h-8 text-white" />
+        <a href="#home" className="flex items-center gap-3 group">
+          <img 
+            src={logo} 
+            alt="Bake Studio Bilga Logo" 
+            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]" 
+          />
           <span className="font-script text-3xl text-white tracking-wider">Bake Studio Bilga</span>
-        </div>
+        </a>
 
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
