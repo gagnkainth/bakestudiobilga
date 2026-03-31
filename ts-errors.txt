@@ -1,0 +1,2 @@
+src/components/Contact.tsx(12,28): error TS2503: Cannot find namespace 'React'.
+src/components/Contact.tsx(25,28): error TS2503: Cannot find namespace 'React'.
