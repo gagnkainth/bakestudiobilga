@@ -16,17 +16,16 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-brand-darker/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-brand-darker/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-3 group">
-          <img 
-            src={logo} 
-            alt="Bake Studio Bilga Logo" 
-            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]" 
+          <img
+            src={logo}
+            alt="Bake Studio Bilga Logo"
+            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]"
           />
           <span className="font-script text-3xl text-white tracking-wider">Bake Studio Bilga</span>
         </a>
@@ -41,7 +40,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <button 
+        <button
           className="md:hidden text-white"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
