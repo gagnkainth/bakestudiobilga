@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Facebook, Instagram } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -13,7 +13,14 @@ export default function Footer() {
             <p className="text-zinc-400 text-sm leading-relaxed">
               Bringing the authentic taste of artisanal baking to your table. Experience magic in every bite with our handcrafted pastries and cakes.
             </p>
-
+            <div className="flex items-center gap-4 pt-2">
+              <a href="https://facebook.com/bakestudiobilga" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-red transition-colors" aria-label="Facebook">
+                <Facebook size={24} />
+              </a>
+              <a href="https://instagram.com/bake_studio_bilga_" target="_blank" rel="noopener noreferrer" className="text-white hover:text-brand-red transition-colors" aria-label="Instagram">
+                <Instagram size={24} />
+              </a>
+            </div>
           </div>
 
 
