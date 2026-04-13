@@ -25,7 +25,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Bake Studio Bilga Logo"
-            className="h-12 md:h-16 w-auto object-contain transition-all duration-300 group-hover:scale-105 drop-shadow-[0_0_12px_rgba(255,255,255,0.7)]"
+            className="h-12 w-12 md:h-16 md:w-16 rounded-full bg-white p-1 md:p-1.5 object-contain transition-all duration-300 group-hover:scale-105 shadow-[0_0_12px_rgba(255,255,255,0.7)]"
           />
           <span className="font-script text-3xl text-white tracking-wider">Bake Studio Bilga</span>
         </a>
